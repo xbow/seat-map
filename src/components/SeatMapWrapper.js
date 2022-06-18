@@ -3,7 +3,7 @@ import seats from '../config/seats'
 
 export default function SeatMap() {
   /* 
-    This component is responsible to fetch seats from the API.
+    This component is responsible for fetching seats from the API.
     For now, a hard-coded list of seats is imported above.
   */
 

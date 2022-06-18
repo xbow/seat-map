@@ -4,7 +4,6 @@ import { colors } from '../config/settings'
 export default function SeatMap(props) {
 
   /* Pan and zoom by manipulating these values */
-
   const offsetX = 40
   const offsetY = 0
   const resX = 300
