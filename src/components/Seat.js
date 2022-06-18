@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import colors from '../config/colors'
 
 export default class Seat extends Component {
   /* 
@@ -7,11 +8,6 @@ export default class Seat extends Component {
      
      Since the seat map is a SVG, it cannot be styled via css classes
   */
-  categoryColorMap = {
-    1: "aquamarine",
-    2: "lightpink",
-    3: "mediumpurple"
-  }
   
   onClickSeat(id) {
     /* this could select the seat for booking a ticket*/ 
@@ -19,8 +15,11 @@ export default class Seat extends Component {
   }
 
   get fillColor() {
-    const { category } = this.props
-    return this.categoryColorMap[category]
+    const { category, status } = this.props
+    if (status === 0) {
+      return colors.unavailable;
+    }
+    return colors.categoryColors[category]
   }
 
   render() {

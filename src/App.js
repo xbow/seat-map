@@ -1,10 +1,15 @@
 import './App.css';
-import SeatingChart from './components/SeatingChart'
+import SeatMapWrapper from './components/SeatMapWrapper'
+import Header from './components/Header'
+import Footer from './components/Footer'
+
 
 function App() {
   return (
     <div className="App">
-      <SeatingChart/>
+      <Header/>
+      <SeatMapWrapper/>
+      <Footer/>
     </div>
   );
 }
