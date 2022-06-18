@@ -1,29 +1,25 @@
-import React, { Component } from 'react'
-import colors from '../config/colors'
+import { colors, settings } from '../config/settings'
 
-export default class Seat extends Component {
-  /* 
-     Using a dictionary to map colors to categories could make it easier
-     to customize it later, e.g. by importing the dictionary from a config file 
-     
-     Since the seat map is a SVG, it cannot be styled via css classes
-  */
+export default function Seat(props) {
+  const { posX, posY, id, category, status } = props
+  const { seatRadius } = settings
   
-  onClickSeat(id) {
-    /* this could select the seat for booking a ticket*/ 
-    console.info(`you clicked on seat ${id} `)
+  /* 
+    This could select the seat for booking a ticket
+  */ 
+  function onClickSeat() {
+    console.info(`you clicked on seat ${id}, which is ${status === 1 ? 'available' : 'unavailable' } `)
   }
 
-  get fillColor() {
-    const { category, status } = this.props
+  /*
+    Colors are defined in a settings file to allow for customization
+  */
+  function getFillColor() {
     if (status === 0) {
       return colors.unavailable;
     }
     return colors.categoryColors[category]
   }
 
-  render() {
-    const { posX, posY, id } = this.props
-    return <circle cx={posX} cy={posY} r="8" fill={this.fillColor} onClick={() => this.onClickSeat(id)}/>
-  }
+  return <circle cx={posX} cy={posY} r={seatRadius} fill={getFillColor()} onClick={() => onClickSeat()}/>
 }

@@ -1,3 +1,7 @@
+const settings = {
+  seatRadius: 8
+}
+
 const colors = {
   outline: 'darkgray',
   unavailable: 'lightgrey',
@@ -8,4 +12,4 @@ const colors = {
   }
 }
 
-export default colors
+export { colors, settings }
