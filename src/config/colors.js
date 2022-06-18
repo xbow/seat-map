@@ -1,4 +1,5 @@
 const colors = {
+  outline: 'darkgray',
   unavailable: 'lightgrey',
   categoryColors: {
     1: 'aquamarine',

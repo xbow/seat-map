@@ -1,4 +1,4 @@
-export const seats = [
+const seats = [
   {x: 100, y: 100, status: 1, category: 3},
   {x: 120, y: 100, status: 1, category: 3},
   {x: 140, y: 100, status: 1, category: 3},
@@ -65,3 +65,5 @@ export const seats = [
   {x: 260, y: 200, status: 0, category: 1},
   {x: 280, y: 200, status: 0, category: 1},
 ]
+
+export default seats
