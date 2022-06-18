@@ -1,3 +1,9 @@
+svg {
+  background-color: lightgray;
+}
+
+/* below are the default styles, I should probably delete them?*/
+
 .App {
   text-align: center;
 }
