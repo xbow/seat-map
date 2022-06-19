@@ -2,18 +2,12 @@ import Seat from './Seat'
 import { colors } from '../config/settings'
 
 export default function SeatMap(props) {
-
-  /* Pan and zoom by manipulating these values */
-  const offsetX = 40
-  const offsetY = 0
-  const resX = 300
-  const resY = 300
-
-  const { seats, onClickSeat } = props
-  const viewBoxSettings = `${offsetX}, ${offsetY}, ${resX}, ${resY}`
+  const { seats, onClickSeat, viewBoxParams } = props
+  const { offsetX, offsetY, resolution } = viewBoxParams
+  const viewBoxParamString = `${offsetX}, ${offsetY}, ${resolution}, ${resolution}`
 
   return (
-    <svg viewBox={viewBoxSettings} xmlns="http://www.w3.org/2000/svg" stroke={colors.outline} fill="grey">
+    <svg viewBox={viewBoxParamString} xmlns="http://www.w3.org/2000/svg" stroke={colors.outline}>
       { seats.map((seat, index) => <Seat 
           key={index}
           id={index}

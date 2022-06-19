@@ -28,5 +28,14 @@
   display: block;
   margin: auto 0;
   width: 95%;
+  height: 60vh;
   outline: solid 1px black;
+}
+
+.viewBoxControls .legend {
+  margin: 12px;
+}
+
+.viewBoxControls button {
+  margin: 2px;
 }
