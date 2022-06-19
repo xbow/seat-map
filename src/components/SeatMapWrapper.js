@@ -18,11 +18,12 @@ export default function SeatMap() {
     resolution: 300, 
   }
 
+  /* 
+    This reducer handles the state represented in viewBoxParams. 
+    'updateViewBox' is triggered in the <ViewBoxControls/> component. 
+    viewBoxParams is passed to the viewBoxRenderer.
+  */
   const [viewBoxParams, updateViewBox] = useReducer(viewBoxReducer, initialViewBoxParams)
-
-  function handleSeatClick(index) {
-    console.info(`you clicked on seat ${index} `)
-  }
 
   function viewBoxReducer(state, action) {
     debugger
@@ -44,9 +45,15 @@ export default function SeatMap() {
     }
   }
 
+  /* This useEffect observes viewBoxParams and logs it to console for debugging */
   useEffect(() => {
     console.log(viewBoxParams)
   }, [viewBoxParams])
+
+  /* Add logic for selecting seats in the booking process */
+  function handleSeatClick(index) {
+    console.info(`you clicked on seat ${index} `)
+  }
 
   return (
     <main className="seat-map">

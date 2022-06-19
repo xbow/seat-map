@@ -1,9 +1,16 @@
 # About this app
 
-This is a quick proof of concept / demo of how to generate a seat map for a ticket booking app. It doesn't do anything interesting yet except for rendering the seat map as a SVG.
+This is a quick proof of concept / demo of how to generate a seat map for a ticket booking app.
+
+What it is supposed to demonstrate at this point:
+* Generating a SVG based on an array of seats
+* Zooming and panning the SVG
+* State management in react with hooks:
+  * useReducer() is used to update the SVG's viewBox params
+  * this state is also output to console on each update
 
 Future todos:
-* Add handlers for zooming / dragging the seat map that manipulate the SVG's viewbox.
+* Zoom and pan by using mouse and touch events instead of buttons.
 
 ## Building and running this app
 
