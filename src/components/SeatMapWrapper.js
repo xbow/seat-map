@@ -26,7 +26,6 @@ export default function SeatMap() {
   const [viewBoxParams, updateViewBox] = useReducer(viewBoxReducer, initialViewBoxParams)
 
   function viewBoxReducer(state, action) {
-    debugger
     switch (action.type) {
       case 'zoom-in':
         return {...state, resolution: state.resolution - zoomIncrement}

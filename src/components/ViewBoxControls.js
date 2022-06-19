@@ -4,7 +4,7 @@ export default function ViewBoxControls(props) {
       <div className="legend">
         These buttons have been added as a quick demonstration 
         of how the seat-map SVG can be zoomed and panned.
-        Ideally, this will later be controlled by mouse and touch events.
+        This should later be controlled by mouse and touch events.
       </div>
       <button type="button" onClick={() => props.updateViewBox({type: 'zoom-in'})}>in</button>
       <button type="button" onClick={() => props.updateViewBox({type: 'zoom-out'})}>out</button>
