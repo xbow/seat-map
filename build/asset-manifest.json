@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/seat-map/static/css/main.a66c49b6.css",
+    "main.js": "/seat-map/static/js/main.b7976f4e.js",
+    "static/js/787.3e636d4c.chunk.js": "/seat-map/static/js/787.3e636d4c.chunk.js",
+    "index.html": "/seat-map/index.html",
+    "main.a66c49b6.css.map": "/seat-map/static/css/main.a66c49b6.css.map",
+    "main.b7976f4e.js.map": "/seat-map/static/js/main.b7976f4e.js.map",
+    "787.3e636d4c.chunk.js.map": "/seat-map/static/js/787.3e636d4c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a66c49b6.css",
+    "static/js/main.b7976f4e.js"
+  ]
+}
