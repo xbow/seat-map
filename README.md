@@ -2,6 +2,8 @@
 
 This is a quick proof of concept / demo of how to generate a seat map for a ticket booking app.
 
+Check out a running version at https://xbow.github.io/seat-map/
+
 What it is supposed to demonstrate at this point:
 * Generating a SVG based on an array of seats
 * Zooming and panning the SVG
